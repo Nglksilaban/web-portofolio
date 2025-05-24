@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="logo">Our's Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="login/index.html">Login</a></li>
+
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Hi, Welcome In Our's Portofolio</h1>
+      <p>Student's Mathemacic of Bengkulu University</p>
+    </section>
+
+    <main class="main-content">
+      <div class="left-column">
+        <h2>Sekilas Tentang Kami</h2>
+        <p>
+          Kami adalah tiga mahasiswa dari jurusan Matematika yang sedang belajar dan berkarya bersama dalam berbagai proyek seru. Kami percaya bahwa kerja tim yang solid bisa membawa hasil yang luar biasa!
+        </p>
+      </div>
+      <div class="left-column">
+        <h3>Anggota Tim</h3>
+        <p>
+          Natasya Ade Kuslianti (F1A024016)
+          
+        </p>
+        <p>Nailah Zahirah(F1A024029)</p>
+        <p>Angelika Silaban(F1A024030)</p>
+      </div>
+      <div class="right-column">
+        <h2>Foto Kami</h2>
+        <p>Ini Adalah Kami Bertiga.</p>
+        <img src="foto.jpg" alt="Foto Kami" style="max-width: 90%; text-align: center; border: 1px solid #ccc; padding: 5px;">
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Portofolio web group twelve.</p>
+    </footer>
+  </div>
+
+  <script>
+    function previewGambar(event) {
+      const gambar = document.getElementById('preview');
+      gambar.src = URL.createObjectURL(event.target.files[0]);
+      gambar.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
